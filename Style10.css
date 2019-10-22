@@ -1,0 +1,233 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+img { max-width: 100%; height: auto; }
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+/* nav bar CSS */
+
+ul, li{
+    list-style-type: none;
+    }
+    
+    .hej3{
+    display: flex;
+    justify-content: center;
+    height: 50%; 
+    }
+
+    .hej3 a{
+        padding: 0 30px;
+        font-size: 15px;
+        margin-top: 1%;
+        color: rgb(8, 40, 8));
+        font: arial;
+    }
+    /* nav bar CSS */
+
+    /* Header picture housepic */
+
+    .header{
+        height: 95vh; 
+        background-image: url("housepic.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 
+        
+        }
+        
+     /* End of header picture housepic */
+
+     /* Welcome text and Button */
+
+       .Explorebutton{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: arial;
+        font-size: 30px;
+        color: black;
+        }
+        span { 
+            display: block;
+            padding: 8px 25px;
+
+        }
+        
+        .buttontab{
+            position:absolute;
+            top: 60%;
+            right: 50%;
+            transform: translate(50% -50%);
+            background: teal;
+            border-width: 10px;
+            border: 4px solid;
+            border-radius: 1px;
+            background-origin: border-box;
+          
+            }
+
+       /* Welcome text and Button end */
+
+
+/*TJÄNSTER*/
+
+   .flexruta-tjänster{
+                    height: 500px;
+                    width: 100%;
+                    background:bisque;
+                    display: flex; 
+                    flex-direction: row;
+                    flex-wrap: wrap; 
+                    box-shadow:2px rgb(240, 170, 84);
+                    margin: 50px;  
+                }
+
+                 .bildruta1{ 
+                    position: relative;
+                    width: 300px; 
+                    height: 400px;
+                    background:rgb(184, 138, 82); 
+                    margin: 50px;
+                    box-sizing: border-box; 
+                    display: inline-block;               
+                }
+
+    .h1tjänster{
+    font: arial;
+    text-align: center;
+    color: teal; 
+    }
+
+/*TJÄNSTER/*
+
+
+        /* Information om personalen */
+                 .flexruta-personal{
+                     position: relative;
+                    height: 500px;
+                    width: 100%;
+                    background: rgba(228, 185, 92, 0.564);
+                    display: flex; 
+                    flex-direction: row;
+                    flex-wrap: wrap; 
+                    box-shadow:2px teal;
+                    margin: 50px;
+                 }
+
+                 .bildruta{ 
+                    position: relative;
+                    width: 300px; 
+                    height: 400px;
+                    background: teal; 
+                    margin: 50px;
+                    box-sizing: border-box; 
+                    display: inline-block;               
+                }
+                
+         /* Information om personalen slut */
+
+
+         /*Kontakta oss*/ 
+         /* Style inputs with type="text", select elements and textareas */
+                input[type=text], select, textarea {
+                width: 100%; /* Full width */
+                padding: 12px; /* Some padding */ 
+                border: 1px solid rgba(222, 190, 85, 0.571); /* Beige border */
+                border-radius: 4px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-top: 6px; /* Add a top margin */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+                input[type=submit] {
+                background-color:teal;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+                input[type=submit]:hover {
+                background-color: #c97d5c;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+               border-radius: 5px;
+               background-color: #eec4837c;
+               padding: 20px;
+                                          }
+         /*Kontakta oss SLUT*/ 
+
+ /*Sociala medier*/ 
+
+  .socialamedier{
+
+    text-align: center;
+    color: teal;
+  }
+   /*SLUT Sociala medier*/ 
+
+    /*About us*/ 
+
+    .omoss{
+        height: 350px;
+        background:bisque;
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap; 
+        box-shadow:2px rgb(240, 170, 84);
+        margin: 50px;  
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+    }
+
+     .textruta{ 
+        position: relative;
+        width: 300px; 
+        height: 400px;
+        margin: 50px;
+        box-sizing: border-box; 
+               
+    }
+
+    .grid-container{ 
+            height: 700px; 
+            display: grid; 
+            grid-template-columns: 100px 200px 150px; 
+            grid-template-rows: 200px 100px 300px; 
+            grid-gap: 140%;
+            }
+    }
